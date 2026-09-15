@@ -1,12 +1,11 @@
-export function TarjetaEspacio(){
+export function TarjetaEspacio({espacio}){
     return(
-
         <>
-            <section className="card p-4 shadow h-100">
-                <img src="" alt="" className="img-fluid"/>
-                <h5 className="card-title fw-bold"></h5>
-                <p className="text-muted"></p>
-                <h3></h3>
+            <section className="card p-4 shadow">
+                <img src={espacio.foto} alt="" height="400"/>
+                <h5 className="card-title fw-bold">{espacio.nombre}</h5>
+                <p className="text-muted">{espacio.descripcion}</p>
+                <h3>Aforo: {espacio.aforo}</h3>
 
             </section>
 
